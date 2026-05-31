@@ -1,0 +1,46 @@
+{
+  "dataset": "CIC-IDS2017",
+  "mode": "forecast",
+  "params": {
+    "beta": 0.06727123260498047,
+    "gamma": 1.5757243633270264,
+    "kappa": 8.864973068237305,
+    "delta": 2.4876463413238525
+  },
+  "train_metrics": {
+    "MAE": 0.07247204775918968,
+    "RMSE": 0.14363941399265426,
+    "R²": 0.6536012192548106
+  },
+  "n_anomaly_points": 166,
+  "residual_threshold": 6.127626419067383,
+  "config": {
+    "preprocessed": "/Users/maksimtimosuk/Desktop/vkr_project/vkr_code_updated/results/preprocessed.npz",
+    "output_dir": "pinn_cyber_threat_dynamics/results_forecast",
+    "mode": "forecast",
+    "train_ratio": 0.8,
+    "holdout_step": 5,
+    "hidden_dim": 128,
+    "n_layers": 4,
+    "n_harmonics": 4,
+    "epochs": 5000,
+    "min_epochs": 1200,
+    "patience": 800,
+    "n_colloc": 1000,
+    "lr": 0.001,
+    "lambda_data": 1.0,
+    "lambda_ode": 0.001,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 0.001,
+    "lambda_smooth": 0.1,
+    "I0": 0.05,
+    "D0": 0.0,
+    "seed": 42,
+    "log_every": 500
+  },
+  "test_metrics": {
+    "MAE": 0.3584457514732397,
+    "RMSE": 0.39642030500382375,
+    "R²": -4.446929185325571
+  }
+}

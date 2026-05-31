@@ -1,0 +1,51 @@
+{
+  "dataset": "CIC-IDS2017",
+  "mode": "holdout",
+  "params": {
+    "beta": 1.6620515584945679,
+    "gamma": 1.0653624534606934,
+    "kappa": 1.9961241483688354,
+    "delta": 3.1514313220977783
+  },
+  "train_metrics": {
+    "MAE": 0.0032112697088422237,
+    "RMSE": 0.008457854000453598,
+    "R²": 0.9468058675498866
+  },
+  "n_anomaly_points": 13,
+  "residual_threshold": 53.53422927856445,
+  "config": {
+    "preprocessed": "/Users/maksimtimosuk/Desktop/vkr_project/vkr_code_cse2018/results_cse2018_reconstruction/cse2018_preprocessed.npz",
+    "output_dir": "pinn_cyber_threat_dynamics/tuning_2018/G",
+    "mode": "holdout",
+    "train_ratio": 0.8,
+    "holdout_step": 5,
+    "holdout_offset": 4,
+    "hidden_dim": 160,
+    "n_layers": 6,
+    "n_harmonics": 32,
+    "n_state_harmonics": 128,
+    "epochs": 5000,
+    "min_epochs": 1500,
+    "patience": 900,
+    "n_colloc": 1000,
+    "lr": 0.001,
+    "weight_decay": 1e-07,
+    "lambda_data": 1.0,
+    "lambda_ode": 5e-06,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 5e-06,
+    "lambda_smooth": 5e-05,
+    "lambda_d_smooth": 0.0,
+    "peak_weight": 300.0,
+    "I0": 0.05,
+    "D0": 0.0,
+    "seed": 42,
+    "log_every": 1000
+  },
+  "test_metrics": {
+    "MAE": 0.0033092120099894374,
+    "RMSE": 0.008612303200494524,
+    "R²": 0.8730885276511773
+  }
+}
