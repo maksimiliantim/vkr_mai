@@ -1,0 +1,76 @@
+mode=holdout, train=1920, test=480
+[    1] loss=4.3259e-01 data=3.6414e-01 ode=5.3659e+01 R2_train=-352.9142 lambda_data=0.9999 lambda_ode=5e-06
+[ 1000] loss=9.1730e-04 data=4.4600e-04 ode=9.7147e+01 R2_train=0.5062 lambda_data=0.9951 lambda_ode=4.825e-06
+[ 2000] loss=2.8963e-04 data=1.5218e-04 ode=2.9059e+01 R2_train=0.8046 lambda_data=0.9935 lambda_ode=4.743e-06
+[ 3000] loss=4.2606e-04 data=3.1845e-04 ode=2.3546e+01 R2_train=0.7054 lambda_data=0.9906 lambda_ode=4.657e-06
+[ 4000] loss=8.0089e-05 data=5.8088e-05 ode=4.9117e+00 R2_train=0.9254 lambda_data=0.9878 lambda_ode=4.601e-06
+[ 5000] loss=6.3674e-05 data=5.0195e-05 ode=3.0961e+00 R2_train=0.9348 lambda_data=0.9845 lambda_ode=4.557e-06
+{
+  "dataset": "CSE-CIC-IDS2018",
+  "mode": "holdout",
+  "params": {
+    "beta": 1.671913504600525,
+    "gamma": 1.0615298748016357,
+    "kappa": 2.0956947803497314,
+    "delta": 2.929257392883301
+  },
+  "initial_loss_weights": {
+    "lambda_data": 1.0,
+    "lambda_ode": 4.999999873689376e-06,
+    "lambda_ic": 0.10000000149011612,
+    "lambda_forcing": 4.999999873689376e-06,
+    "lambda_smooth": 4.999999873689376e-05,
+    "lambda_d_smooth": 0.0
+  },
+  "learned_loss_weights": {
+    "lambda_data": 0.9847383499145508,
+    "lambda_ode": 4.559653461910784e-06,
+    "lambda_ic": 0.09985201805830002,
+    "lambda_forcing": 4.09964286518516e-06,
+    "lambda_smooth": 4.159094169153832e-05,
+    "lambda_d_smooth": 0.0
+  },
+  "train_metrics": {
+    "MAE": 0.003314059874747007,
+    "RMSE": 0.008624717255429678,
+    "R²": 0.944686250939727
+  },
+  "n_anomaly_points": 13,
+  "residual_threshold": 53.362457275390625,
+  "config": {
+    "preprocessed": "/Users/maksimtimosuk/Desktop/vkr_project/pinn_cyber_threat_dynamics_v4/data/cse2018_preprocessed/cse2018_preprocessed.npz",
+    "dataset": "CSE-CIC-IDS2018",
+    "output_dir": "/Users/maksimtimosuk/Desktop/vkr_project/pinn_cyber_threat_dynamics_v4/final_2018_holdout",
+    "mode": "holdout",
+    "train_ratio": 0.8,
+    "holdout_step": 5,
+    "holdout_offset": 4,
+    "hidden_dim": 160,
+    "n_layers": 6,
+    "n_harmonics": 32,
+    "n_state_harmonics": 128,
+    "epochs": 5000,
+    "min_epochs": 1500,
+    "patience": 900,
+    "n_colloc": 1000,
+    "lr": 0.001,
+    "loss_weight_lr_scale": 0.1,
+    "weight_decay": 1e-07,
+    "lambda_data": 1.0,
+    "lambda_ode": 5e-06,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 5e-06,
+    "lambda_smooth": 5e-05,
+    "lambda_d_smooth": 0.0,
+    "peak_weight": 300.0,
+    "I0": 0.05,
+    "D0": 0.0,
+    "seed": 42,
+    "log_every": 1000
+  },
+  "test_metrics": {
+    "MAE": 0.0034187473493991166,
+    "RMSE": 0.008997128798253854,
+    "R²": 0.8614935060767255
+  }
+}

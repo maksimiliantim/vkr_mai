@@ -1,0 +1,24 @@
+{
+  "metrics": [
+    {
+      "Детектор": "Isolation Forest",
+      "ROC-AUC": 1.0,
+      "PR-AUC": 1.0
+    },
+    {
+      "Детектор": "PINN R(t)",
+      "ROC-AUC": 0.8502,
+      "PR-AUC": 0.7741
+    },
+    {
+      "Детектор": "Rolling Z-score",
+      "ROC-AUC": 0.8279,
+      "PR-AUC": 0.6937
+    },
+    {
+      "Детектор": "CUSUM",
+      "ROC-AUC": 0.7417,
+      "PR-AUC": 0.6049
+    }
+  ]
+}

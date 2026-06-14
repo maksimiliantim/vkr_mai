@@ -1,0 +1,69 @@
+{
+  "config": {
+    "preprocessed": "/Users/maksimtimosuk/Desktop/vkr_project/vkr_code_updated/results/preprocessed.npz",
+    "output_dir": "pinn_cyber_threat_dynamics/cv_C/offset_0",
+    "mode": "holdout",
+    "train_ratio": 0.8,
+    "holdout_step": 5,
+    "holdout_offset": 0,
+    "hidden_dim": 128,
+    "n_layers": 5,
+    "n_harmonics": 12,
+    "epochs": 3500,
+    "min_epochs": 1000,
+    "patience": 500,
+    "n_colloc": 1000,
+    "lr": 0.001,
+    "lambda_data": 1.0,
+    "lambda_ode": 0.0003,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 0.0003,
+    "lambda_smooth": 0.01,
+    "peak_weight": 3.0,
+    "I0": 0.05,
+    "D0": 0.0,
+    "seed": 42,
+    "log_every": 1000
+  },
+  "folds": [
+    {
+      "offset": 0,
+      "train_R2": 0.7879635003927299,
+      "test_R2": 0.7636858452252535,
+      "test_MAE": 0.07023962454565087,
+      "test_RMSE": 0.12295426917421962
+    },
+    {
+      "offset": 1,
+      "train_R2": 0.7896240904075441,
+      "test_R2": 0.7691950989006571,
+      "test_MAE": 0.07035220937771859,
+      "test_RMSE": 0.12302872782814028
+    },
+    {
+      "offset": 2,
+      "train_R2": 0.7776917850006244,
+      "test_R2": 0.7864275759996847,
+      "test_MAE": 0.0694266846117292,
+      "test_RMSE": 0.12176444921530108
+    },
+    {
+      "offset": 3,
+      "train_R2": 0.7754111954697155,
+      "test_R2": 0.7999976999370706,
+      "test_MAE": 0.06630896280087957,
+      "test_RMSE": 0.1144243286734325
+    },
+    {
+      "offset": 4,
+      "train_R2": 0.7810330597657099,
+      "test_R2": 0.7852548553663392,
+      "test_MAE": 0.06710847688227659,
+      "test_RMSE": 0.11866332741476332
+    }
+  ],
+  "test_R2_mean": 0.780912215085801,
+  "test_R2_min": 0.7636858452252535,
+  "test_R2_max": 0.7999976999370706,
+  "test_R2_stdev": 0.013019770296692112
+}

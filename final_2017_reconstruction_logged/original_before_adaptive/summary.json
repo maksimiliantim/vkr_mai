@@ -1,0 +1,61 @@
+{
+  "dataset": "CIC-IDS2017",
+  "mode": "reconstruction",
+  "params": {
+    "beta": 0.31706738471984863,
+    "gamma": 1.3354077339172363,
+    "kappa": 9.050416946411133,
+    "delta": 2.043426275253296
+  },
+  "train_metrics": {
+    "MAE": 0.04687128722349977,
+    "RMSE": 0.09227100638743305,
+    "R²": 0.8709801844426192
+  },
+  "n_anomaly_points": 116,
+  "residual_threshold": 20.822742462158203,
+  "config": {
+    "preprocessed": "data/cic2017_preprocessed.npz",
+    "dataset": "CIC-IDS2017",
+    "output_dir": "final_2017_reconstruction_logged",
+    "mode": "reconstruction",
+    "train_ratio": 0.8,
+    "holdout_step": 5,
+    "holdout_offset": 4,
+    "hidden_dim": 160,
+    "n_layers": 6,
+    "n_harmonics": 16,
+    "n_state_harmonics": 48,
+    "epochs": 4000,
+    "min_epochs": 1200,
+    "patience": 700,
+    "n_colloc": 1000,
+    "lr": 0.001,
+    "weight_decay": 1e-07,
+    "lambda_data": 1.0,
+    "lambda_ode": 5e-05,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 0.0001,
+    "lambda_smooth": 0.001,
+    "lambda_d_smooth": 5e-06,
+    "peak_weight": 5.0,
+    "I0": 0.05,
+    "D0": 0.0,
+    "seed": 42,
+    "log_every": 250,
+    "history_every": 25,
+    "history_name": "training_history.csv",
+    "figure_name": "training_dynamics.png",
+    "final_marker_at": "last_epoch"
+  },
+  "training_history": {
+    "epochs_run": 4000,
+    "best_epoch": 3907,
+    "best_optimizer_loss_before_step": 0.015171151608228683
+  },
+  "metrics": {
+    "MAE": 0.04687128722349977,
+    "RMSE": 0.09227100638743305,
+    "R²": 0.8709801844426192
+  }
+}
