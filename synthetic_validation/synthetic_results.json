@@ -1,0 +1,25 @@
+{
+  "description": "Синтетическая проверка идентифицируемости параметров (раздел 4.6 ВКР)",
+  "true_params": {
+    "beta": 0.5,
+    "gamma": 1.2,
+    "kappa": 8.0,
+    "delta": 2.5
+  },
+  "noise_frac": 0.03,
+  "lambda_ode": 0.001,
+  "R2_thesis": 0.9907,
+  "params_thesis": {
+    "beta": 0.225,
+    "gamma": 0.735,
+    "kappa": 4.737,
+    "delta": 0.276
+  },
+  "errors_thesis_pct": {
+    "beta": 55.0,
+    "gamma": 38.7,
+    "kappa": 40.8,
+    "delta": 89.0
+  },
+  "note": "R²~0.99 воспроизводится стабильно. Параметры θ̂ между прогонами отличаются — non-identifiability (главный вывод раздела 4.6)."
+}

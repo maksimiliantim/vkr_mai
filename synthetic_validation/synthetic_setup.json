@@ -1,0 +1,9 @@
+{
+  "true_params": {
+    "beta": 0.5,
+    "gamma": 1.2,
+    "kappa": 8.0,
+    "delta": 2.5
+  },
+  "note": "Запустите: python run_experiment.py --preprocessed synthetic_validation/synthetic_data.npz --output_dir synthetic_validation/pinn_result --epochs 5000 --n_harmonics 4 --n_state_harmonics 12 --lambda_ode 1e-3"
+}

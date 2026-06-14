@@ -1,0 +1,86 @@
+{
+  "description": "Оценка устойчивости holdout-метрики по 5 смещениям (раздел 4.9 ВКР). Конфигурация: hidden_dim=160, n_layers=6, n_harmonics=16, n_state_harmonics=48, epochs=4000, patience=700, lambda_ode=5e-5, lambda_ic=0.1, lambda_forcing=1e-4, lambda_smooth=1e-3, lambda_d_smooth=5e-6, peak_weight=5, loss_weight_lr_scale=0.1.",
+  "dataset": "CIC-IDS2017",
+  "config": {
+    "hidden_dim": 160,
+    "n_layers": 6,
+    "n_harmonics": 16,
+    "n_state_harmonics": 48,
+    "epochs": 4000,
+    "patience": 700,
+    "lambda_ode": 5e-05,
+    "lambda_ic": 0.1,
+    "lambda_forcing": 0.0001,
+    "lambda_smooth": 0.001,
+    "lambda_d_smooth": 5e-06,
+    "peak_weight": 5,
+    "loss_weight_lr_scale": 0.1
+  },
+  "folds": [
+    {
+      "offset": 0,
+      "test_R2": 0.8521,
+      "test_MAE": 0.048,
+      "test_RMSE": 0.0973,
+      "params": {
+        "beta": 0.423,
+        "gamma": 1.294,
+        "kappa": 8.964,
+        "delta": 1.886
+      }
+    },
+    {
+      "offset": 1,
+      "test_R2": 0.8616,
+      "test_MAE": 0.0476,
+      "test_RMSE": 0.0953,
+      "params": {
+        "beta": 0.36,
+        "gamma": 1.304,
+        "kappa": 8.965,
+        "delta": 2.272
+      }
+    },
+    {
+      "offset": 2,
+      "test_R2": 0.8844,
+      "test_MAE": 0.0464,
+      "test_RMSE": 0.0896,
+      "params": {
+        "beta": 0.352,
+        "gamma": 1.325,
+        "kappa": 9.005,
+        "delta": 2.011
+      }
+    },
+    {
+      "offset": 3,
+      "test_R2": 0.8941,
+      "test_MAE": 0.0431,
+      "test_RMSE": 0.0833,
+      "params": {
+        "beta": 0.347,
+        "gamma": 1.316,
+        "kappa": 8.986,
+        "delta": 2.047
+      }
+    },
+    {
+      "offset": 4,
+      "test_R2": 0.8736,
+      "test_MAE": 0.0448,
+      "test_RMSE": 0.091,
+      "params": {
+        "beta": 0.349,
+        "gamma": 1.319,
+        "kappa": 8.996,
+        "delta": 2.042
+      },
+      "source": "final_2017_holdout/summary.json"
+    }
+  ],
+  "test_R2_mean": 0.8732,
+  "test_R2_min": 0.8521,
+  "test_R2_max": 0.8941,
+  "note": "offset_4 подтверждён final_2017_holdout. offset_0..3 из таблицы 4.6 ВКР — для воспроизведения запустить run_experiment.py с holdout_offset=0..3 и параметрами из config."
+}

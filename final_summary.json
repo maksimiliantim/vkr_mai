@@ -1,52 +1,142 @@
 {
+  "model_version": "v4_adaptive_loss_weights_slow_lr",
+  "description": "Same PINN formulation as the presentation; only AdaptiveLossWeights is added. Loss weights are optimized with lr * loss_weight_lr_scale.",
   "runs": [
     {
       "run": "final_2017_reconstruction",
       "dataset": "CIC-IDS2017",
       "mode": "reconstruction",
-      "train_R2": 0.8709801844426192,
-      "train_MAE": 0.04687128722349977,
-      "train_RMSE": 0.09227100638743305,
-      "n_anomaly_points": 116,
-      "all_R2": 0.8709801844426192,
-      "all_MAE": 0.04687128722349977,
-      "all_RMSE": 0.09227100638743305
+      "train_R2": 0.8772195411013695,
+      "train_MAE": 0.04583713666451028,
+      "train_RMSE": 0.09001226191293503,
+      "n_anomaly_points": 115,
+      "params": {
+        "beta": 0.5032199025154114,
+        "gamma": 1.247851848602295,
+        "kappa": 8.907975196838379,
+        "delta": 1.4391769170761108
+      },
+      "initial_loss_weights": {
+        "lambda_data": 1.0,
+        "lambda_ode": 5e-05,
+        "lambda_ic": 0.1,
+        "lambda_forcing": 0.0001,
+        "lambda_smooth": 0.001,
+        "lambda_d_smooth": 5e-06
+      },
+      "learned_loss_weights": {
+        "lambda_data": 0.8244397640228271,
+        "lambda_ode": 3.483758700895123e-05,
+        "lambda_ic": 0.09903395175933838,
+        "lambda_forcing": 6.335185025818646e-05,
+        "lambda_smooth": 0.0007110487204045057,
+        "lambda_d_smooth": 4.9050790948967915e-06
+      },
+      "all_R2": 0.8772195411013695,
+      "all_MAE": 0.04583713666451028,
+      "all_RMSE": 0.09001226191293503
     },
     {
       "run": "final_2017_holdout",
       "dataset": "CIC-IDS2017",
       "mode": "holdout",
-      "train_R2": 0.8697993301924021,
-      "train_MAE": 0.047341958438876945,
-      "train_RMSE": 0.0927652163528142,
-      "n_anomaly_points": 115,
-      "test_R2": 0.8681157003565495,
-      "test_MAE": 0.04654415835005542,
-      "test_RMSE": 0.09299324318588906
+      "train_R2": 0.8756053914913889,
+      "train_MAE": 0.04557216643118712,
+      "train_RMSE": 0.09067328110572499,
+      "n_anomaly_points": 119,
+      "params": {
+        "beta": 0.3489348888397217,
+        "gamma": 1.319238543510437,
+        "kappa": 8.995712280273438,
+        "delta": 2.0423033237457275
+      },
+      "initial_loss_weights": {
+        "lambda_data": 1.0,
+        "lambda_ode": 5e-05,
+        "lambda_ic": 0.1,
+        "lambda_forcing": 0.0001,
+        "lambda_smooth": 0.001,
+        "lambda_d_smooth": 5e-06
+      },
+      "learned_loss_weights": {
+        "lambda_data": 0.8267691731452942,
+        "lambda_ode": 3.5035725886700675e-05,
+        "lambda_ic": 0.09932226687669754,
+        "lambda_forcing": 6.209107232280076e-05,
+        "lambda_smooth": 0.0007032438879832625,
+        "lambda_d_smooth": 4.906220965494867e-06
+      },
+      "test_R2": 0.8735704113746638,
+      "test_MAE": 0.044830750218534374,
+      "test_RMSE": 0.09104984439691828
     },
     {
       "run": "final_2018_reconstruction",
       "dataset": "CSE-CIC-IDS2018",
       "mode": "reconstruction",
-      "train_R2": 0.930169007984664,
-      "train_MAE": 0.003067644623105821,
-      "train_RMSE": 0.009126547085042251,
+      "train_R2": 0.9182036948541694,
+      "train_MAE": 0.0038291168716411525,
+      "train_RMSE": 0.00987754998540235,
       "n_anomaly_points": 9,
-      "all_R2": 0.930169007984664,
-      "all_MAE": 0.003067644623105821,
-      "all_RMSE": 0.009126547085042251
+      "params": {
+        "beta": 1.7171841859817505,
+        "gamma": 1.0451616048812866,
+        "kappa": 2.832425355911255,
+        "delta": 1.6653295755386353
+      },
+      "initial_loss_weights": {
+        "lambda_data": 1.0,
+        "lambda_ode": 5e-06,
+        "lambda_ic": 0.1,
+        "lambda_forcing": 5e-06,
+        "lambda_smooth": 5e-05,
+        "lambda_d_smooth": 0.0
+      },
+      "learned_loss_weights": {
+        "lambda_data": 0.9831770062446594,
+        "lambda_ode": 4.453778728930047e-06,
+        "lambda_ic": 0.09982236474752426,
+        "lambda_forcing": 4.153042027610354e-06,
+        "lambda_smooth": 4.21481418015901e-05,
+        "lambda_d_smooth": 0.0
+      },
+      "all_R2": 0.9182036948541694,
+      "all_MAE": 0.0038291168716411525,
+      "all_RMSE": 0.00987754998540235
     },
     {
       "run": "final_2018_holdout",
       "dataset": "CSE-CIC-IDS2018",
       "mode": "holdout",
-      "train_R2": 0.9468058675498866,
-      "train_MAE": 0.0032112697088422237,
-      "train_RMSE": 0.008457854000453598,
+      "train_R2": 0.944686250939727,
+      "train_MAE": 0.003314059874747007,
+      "train_RMSE": 0.008624717255429678,
       "n_anomaly_points": 13,
-      "test_R2": 0.8730885276511773,
-      "test_MAE": 0.0033092120099894374,
-      "test_RMSE": 0.008612303200494524
+      "params": {
+        "beta": 1.671913504600525,
+        "gamma": 1.0615298748016357,
+        "kappa": 2.0956947803497314,
+        "delta": 2.929257392883301
+      },
+      "initial_loss_weights": {
+        "lambda_data": 1.0,
+        "lambda_ode": 5e-06,
+        "lambda_ic": 0.1,
+        "lambda_forcing": 5e-06,
+        "lambda_smooth": 5e-05,
+        "lambda_d_smooth": 0.0
+      },
+      "learned_loss_weights": {
+        "lambda_data": 0.9847383499145508,
+        "lambda_ode": 4.559653461910784e-06,
+        "lambda_ic": 0.09985201805830002,
+        "lambda_forcing": 4.09964286518516e-06,
+        "lambda_smooth": 4.159094169153832e-05,
+        "lambda_d_smooth": 0.0
+      },
+      "test_R2": 0.8614935060767255,
+      "test_MAE": 0.0034187473493991166,
+      "test_RMSE": 0.008997128798253854
     }
   ]
 }
