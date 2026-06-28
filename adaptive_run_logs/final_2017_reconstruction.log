@@ -1,3 +1,9 @@
+mode=reconstruction, train=2400, test=0
+[    1] loss=3.2672e-01 data=2.5683e-01 ode=3.3269e+00 R2_train=-4.6256 lambda_data=0.9999 lambda_ode=5e-05
+[ 1000] loss=1.4965e-02 data=1.0751e-02 ode=9.7655e+01 R2_train=0.8729 lambda_data=0.9724 lambda_ode=4.596e-05
+[ 2000] loss=1.4013e-02 data=1.0686e-02 ode=9.7275e+01 R2_train=0.8760 lambda_data=0.928 lambda_ode=4.189e-05
+[ 3000] loss=1.3931e-02 data=1.2370e-02 ode=7.9050e+01 R2_train=0.8660 lambda_data=0.8772 lambda_ode=3.819e-05
+[ 4000] loss=1.2034e-02 data=1.0368e-02 ode=9.8951e+01 R2_train=0.8772 lambda_data=0.8244 lambda_ode=3.484e-05
 {
   "dataset": "CIC-IDS2017",
   "mode": "reconstruction",

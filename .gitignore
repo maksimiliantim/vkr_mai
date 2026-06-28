@@ -16,5 +16,6 @@ results_reconstruction/
 results_tuned_holdout/
 results_tuned_reconstruction/
 **/original_before_adaptive/
-adaptive_run_logs/
+adaptive_run_logs/*
+!adaptive_run_logs/*.log
 old_version/

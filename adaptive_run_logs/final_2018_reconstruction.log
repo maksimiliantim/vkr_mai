@@ -1,3 +1,10 @@
+mode=reconstruction, train=2400, test=0
+[    1] loss=4.3698e-01 data=3.6854e-01 ode=5.3659e+01 R2_train=-398.0428 lambda_data=0.9999 lambda_ode=5e-06
+[ 1000] loss=1.8421e-03 data=1.5623e-03 ode=5.9299e+01 R2_train=0.5527 lambda_data=0.9945 lambda_ode=4.816e-06
+[ 2000] loss=3.1805e-04 data=1.7833e-04 ode=2.9632e+01 R2_train=0.7600 lambda_data=0.9928 lambda_ode=4.744e-06
+[ 3000] loss=2.5525e-04 data=1.4758e-04 ode=2.3413e+01 R2_train=0.7869 lambda_data=0.9905 lambda_ode=4.65e-06
+[ 4000] loss=1.8158e-04 data=1.1639e-04 ode=1.4659e+01 R2_train=0.8301 lambda_data=0.9869 lambda_ode=4.54e-06
+[ 5000] loss=9.6617e-05 data=6.1168e-05 ode=8.1889e+00 R2_train=0.9161 lambda_data=0.9825 lambda_ode=4.443e-06
 {
   "dataset": "CSE-CIC-IDS2018",
   "mode": "reconstruction",
